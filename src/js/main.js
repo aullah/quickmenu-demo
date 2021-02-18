@@ -1,3 +1,4 @@
+import bootstrap from 'bootstrap';
 import QuickMenu from "quickmenu";
 
 new QuickMenu();
