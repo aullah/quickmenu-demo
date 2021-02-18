@@ -1,1 +1,16 @@
+// FontAwesome.
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts/";
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+
+// Quick Menu.
 @import "../../node_modules/quickmenu/src/scss/quickmenu";
+
+// Use 'Open Sans' font.
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}

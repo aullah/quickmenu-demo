@@ -4,17 +4,20 @@
   "description": "The live demo of the Quick Menu. Source code for the quickmenu.org site.",
   "private": true,
   "scripts": {
-    "build": "(webpack) && (sass --style=compressed --source-map --embed-sources src/sass/style.scss:dist/css/style.css)"
+    "build": "(webpack) && (sass --style=compressed --source-map --embed-sources src/sass/style.scss:dist/css/style.css)",
+    "watch": "concurrently \"webpack --watch\" \"sass --watch --style=compressed --source-map --embed-sources src/sass/style.scss:dist/css/style.css\""
   },
   "keywords": [],
   "author": "Arif Ullah",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "sass": "^1.32.7",
     "webpack": "^5.22.0",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "concurrently": "^5.3.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "quickmenu": "^1.2.0"
   }
 }
